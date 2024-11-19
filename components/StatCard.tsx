@@ -10,7 +10,7 @@ interface  StatCardProps {
 
 }
 
-const StatCard = ({count = 0 , label, icon, type }) => {
+const StatCard = ({count = 0 , label = "", icon= "", type= "" }) => {
     return (
         <div className={clsx(`stat-card`, {
             'bg-appointments': type === 'appointments',
